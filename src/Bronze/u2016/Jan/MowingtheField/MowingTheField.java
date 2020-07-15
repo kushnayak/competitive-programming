@@ -1,4 +1,4 @@
-/*
+package Bronze.u2016.Jan.MowingtheField;/*
 ID: kushnay1
 LANG: JAVA
 TASK: Mowing the Field
