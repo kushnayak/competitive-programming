@@ -1,52 +1,46 @@
-package Algorithms.BFS;
+package Algorithms.DFS;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.StringTokenizer;
 
-public class BFS {
+public class DFSRecursion {
     static ArrayList<Integer>[] adj;
     static boolean[] visited;
     static int n, m;
 
-    static void bfs(int node) {
-        Queue<Integer> q = new LinkedList<>();
-        q.add(node);
-
-        while (!q.isEmpty()) {
-            int curNode = q.poll();
-            if (!visited[curNode]) {
-                System.out.print(curNode + 1 + " ");
-                visited[curNode] = true;
-            }
-            for (int adjVert: adj[curNode]) {
-                if (!visited[adjVert]) {
-                    q.add(adjVert);
-                }
-            }
+    static void dfs(int node) {
+        if (visited[node]) return;
+        visited[node] = true;
+        System.out.print(node + " ");
+        for (int next: adj[node]) {
+            dfs(next);
         }
-
-
     }
-    public static void main(String[] args) throws IOException{
-        InputReader r = new InputReader("bfs.in");
-        n = r.nextInt(); m = r.nextInt();
+    public static void main(String[] args) throws IOException {
+        InputReader reader = new InputReader("dfs.in");
+        n = reader.nextInt();
+        m = reader.nextInt();
         adj = new ArrayList[n];
         visited = new boolean[n];
+
         for (int i = 0; i < n; i++) {
             adj[i] = new ArrayList<>();
         }
         for (int i = 0; i < m; i++) {
-            int a = r.nextInt() -1;
-            int b = r.nextInt() -1;
+            int a = reader.nextInt() - 1;
+            int b = reader.nextInt() - 1;
             adj[a].add(b);
             adj[b].add(a);
         }
         System.out.println(Arrays.toString(adj));
-        bfs(0);
+        dfs(0);
     }
+
 
     static class InputReader {
         BufferedReader reader;

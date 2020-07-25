@@ -6,23 +6,35 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Stack;
 import java.util.StringTokenizer;
 
-public class DFS {
+public class DFSIterative {
+
     static ArrayList<Integer>[] adj;
     static boolean[] visited;
-    static int n, m;
+    static int n,m;
 
-    static void dfs(int node) {
-        if (visited[node]) return;
-        visited[node] = true;
-        System.out.print(node + " ");
-        for (int next: adj[node]) {
-            dfs(next);
+    static void dfsIterative(int node) {
+        Stack<Integer> stack = new Stack<>();
+        stack.push(node);
+
+        while(!stack.empty()) {
+            int curNode = stack.pop();
+            if (!visited[curNode]) {
+                System.out.print(curNode + " ");
+                visited[curNode] = true;
+            }
+            for (int adjVert: adj[curNode]) {
+                if (!visited[adjVert]) {
+                    stack.push(adjVert);
+                }
+            }
         }
     }
-    public static void main(String[] args) throws IOException {
-        InputReader reader = new InputReader("dfs.in");
+
+    public static void main(String[] args) throws IOException{
+        DFSRecursion.InputReader reader = new DFSRecursion.InputReader("dfs.in");
         n = reader.nextInt();
         m = reader.nextInt();
         adj = new ArrayList[n];
@@ -38,9 +50,8 @@ public class DFS {
             adj[b].add(a);
         }
         System.out.println(Arrays.toString(adj));
-        dfs(0);
+        dfsIterative(0);
     }
-
 
     static class InputReader {
         BufferedReader reader;

@@ -1,6 +1,4 @@
-package Algorithms;
-
-import java.util.ArrayList;
+package Algorithms.Permuatations;
 
 public class RecursivePermutation {
 
