@@ -1,8 +1,13 @@
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.Comparator;
+import java.util.StringTokenizer;
+
 public class scratch {
 
-    public static void main(String[] args) {
-        String string = "Hello";
-        for (int i=0; i<2; i++) string += string;
-        System.out.println(string);
+    public static void main(String[] args) throws IOException {
+        boolean[] arr = {true, true, false};
+        boolean[] arr1 = {true, true, false};
+        System.out.println(Arrays.equals(arr, arr1));
     }
 }

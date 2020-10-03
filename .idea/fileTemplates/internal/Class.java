@@ -1,6 +1,8 @@
 #set( $in = '.in"' )
 #set( $out = '.out"' )
 #parse("File Header.java")
+import java.io.*;
+import java.util.*;
 public class ${NAME} {
 
     public static void main(String[] args) throws IOException{

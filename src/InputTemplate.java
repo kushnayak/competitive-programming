@@ -6,6 +6,7 @@ import java.util.StringTokenizer;
 
 public class InputTemplate {
 
+
     static class InputReader {
         BufferedReader reader;
         StringTokenizer tokenizer;
