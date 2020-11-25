@@ -1,0 +1,9 @@
+cmake_minimum_required(VERSION 3.16)
+project(USACO_C++)
+
+set(CMAKE_CXX_STANDARD 14)
+
+add_executable(chessboard_and_queens CSES/chessboard_and_queens.cpp)
+add_executable(test test.cpp)
+add_executable(livestock USACO/Bronze/LivestockLineup/livestock.cpp)
+add_executable(forth USACO/Bronze/BackandForth/forth.cpp)

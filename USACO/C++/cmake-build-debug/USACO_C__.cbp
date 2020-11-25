@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="USACO_C__"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="avbotz_triangles">
+				<Option output="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/avbotz_triangles" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 avbotz_triangles"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="avbotz_triangles/fast">
+				<Option output="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/avbotz_triangles" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 avbotz_triangles/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MilkMeasurement">
+				<Option output="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/MilkMeasurement" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 MilkMeasurement"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MilkMeasurement/fast">
+				<Option output="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/MilkMeasurement" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 MilkMeasurement/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cross">
+				<Option output="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/cross" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 cross"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="cross/fast">
+				<Option output="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/cross" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 cross/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Liefgaurd">
+				<Option output="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Liefgaurd" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 Liefgaurd"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Liefgaurd/fast">
+				<Option output="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Liefgaurd" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 Liefgaurd/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BovineGenomics">
+				<Option output="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/BovineGenomics" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 BovineGenomics"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BovineGenomics/fast">
+				<Option output="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/BovineGenomics" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 BovineGenomics/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="balance">
+				<Option output="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/balance" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 balance"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="balance/fast">
+				<Option output="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/balance" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 balance/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MixingMilk">
+				<Option output="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/MixingMilk" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 MixingMilk"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="MixingMilk/fast">
+				<Option output="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/MixingMilk" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 MixingMilk/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="main">
+				<Option output="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 main"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="main/fast">
+				<Option output="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/main" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 main/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option output="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test/fast">
+				<Option output="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 test/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="WhyDidCowCrossRoadII">
+				<Option output="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/WhyDidCowCrossRoadII" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 WhyDidCowCrossRoadII"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="WhyDidCowCrossRoadII/fast">
+				<Option output="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/WhyDidCowCrossRoadII" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 WhyDidCowCrossRoadII/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LostCow">
+				<Option output="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/LostCow" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 LostCow"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LostCow/fast">
+				<Option output="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/LostCow" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 LostCow/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="genomesilver">
+				<Option output="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/genomesilver" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 genomesilver"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="genomesilver/fast">
+				<Option output="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/genomesilver" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/kush/CLionProjects/USACO_C++/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 genomesilver/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/kush/CLionProjects/USACO_C++/Bronze/BovineGenomics/BovineGenomics.cpp">
+			<Option target="BovineGenomics"/>
+		</Unit>
+		<Unit filename="/Users/kush/CLionProjects/USACO_C++/Bronze/BovineGenomicsSilver/genomesilver.cpp">
+			<Option target="genomesilver"/>
+		</Unit>
+		<Unit filename="/Users/kush/CLionProjects/USACO_C++/Bronze/Liefguarsd/Liefgaurd.cpp">
+			<Option target="Liefgaurd"/>
+		</Unit>
+		<Unit filename="/Users/kush/CLionProjects/USACO_C++/Bronze/LoadBalancing/balance.cpp">
+			<Option target="balance"/>
+		</Unit>
+		<Unit filename="/Users/kush/CLionProjects/USACO_C++/Bronze/LostCow.cpp">
+			<Option target="LostCow"/>
+		</Unit>
+		<Unit filename="/Users/kush/CLionProjects/USACO_C++/Bronze/LostCow.in">
+			<Option target="LostCow"/>
+		</Unit>
+		<Unit filename="/Users/kush/CLionProjects/USACO_C++/Bronze/MilkMeasurement.cpp">
+			<Option target="MilkMeasurement"/>
+		</Unit>
+		<Unit filename="/Users/kush/CLionProjects/USACO_C++/Bronze/MixingMilk.cpp">
+			<Option target="MixingMilk"/>
+		</Unit>
+		<Unit filename="/Users/kush/CLionProjects/USACO_C++/Bronze/WhyDidCowCrossRoadII.cpp">
+			<Option target="WhyDidCowCrossRoadII"/>
+		</Unit>
+		<Unit filename="/Users/kush/CLionProjects/USACO_C++/Bronze/WhyDidtheCowCrosstheRoadII/cross.cpp">
+			<Option target="cross"/>
+		</Unit>
+		<Unit filename="/Users/kush/CLionProjects/USACO_C++/Bronze/main.cpp">
+			<Option target="main"/>
+		</Unit>
+		<Unit filename="/Users/kush/CLionProjects/USACO_C++/avbotz_triangles.cpp">
+			<Option target="avbotz_triangles"/>
+		</Unit>
+		<Unit filename="/Users/kush/CLionProjects/USACO_C++/test.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/Users/kush/CLionProjects/USACO_C++/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

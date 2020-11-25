@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/kush/CLionProjects/USACO_C++/WhereAmI.cpp
+iostream
+-
+fstream
+-
+string
+-
+tuple
+-
+

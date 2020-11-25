@@ -1,0 +1,6 @@
+/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/CMakeFiles/test.dir
+/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/CMakeFiles/forth.dir
+/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/CMakeFiles/livestock.dir
+/Users/kush/CLionProjects/USACO_C++/cmake-build-debug/CMakeFiles/chessboard_and_queens.dir
