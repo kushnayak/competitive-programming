@@ -1,0 +1,11 @@
+{
+	//open -a Terminal.app $file_path/$file_base_name
+	//osascript ~/exectuable_run.scpt $folder/bin/$file_base_name
+	
+	//$folder gives path to first folder open in side bar so open c++ folder as top
+	"selector" : "source.cpp",
+	"shell" : true,
+	"working_dir" : "$file_path",
+	"cmd" : ["g++ -std=c++11 -Wall -O2 $file_name -o $folder/bin/$file_base_name && open -a Terminal.app $folder/bin/$file_base_name"],
+	
+}

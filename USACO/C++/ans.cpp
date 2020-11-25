@@ -15,9 +15,11 @@ void setIO(string name = "") {
 int a, b, x, y;
 
 int main() {
-	setIO("teleport");
+	setIO("");
 
 	cin >> a >> b >> x >> y;
 
 	cout << min(abs(a-b), min(abs(a-x)+abs(b-y), abs(a-y) + abs(x-b))) << nl;
+
+
 }
