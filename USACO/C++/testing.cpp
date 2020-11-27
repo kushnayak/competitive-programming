@@ -1,19 +1,22 @@
 #include <bits/stdc++.h>
+#define nl '\n'
+
 using namespace std;
 
 
-void setIO(string name = "") { 
+void setIO(string name) { 
   ios_base::sync_with_stdio(0); cin.tie(0); 
-  if(sz(name)){
-    freopen((name+".in").c_str(), "r", stdin); 
-    freopen((name+".out").c_str(), "w", stdout);
-  }
+  freopen((name+".in").c_str(), "r", stdin); 
+  freopen((name+".out").c_str(), "w", stdout);
 }
 
 
 int main() {
-	setIO();
+	#ifdef KUSH_LOCAL
+		;
+	#else 
+		setIO("");
+	#endif
 
-	int N;
-	
+	int y1;
 }

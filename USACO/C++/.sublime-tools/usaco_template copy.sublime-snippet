@@ -2,24 +2,35 @@
 <snippet>
 	<content><![CDATA[
 #include <bits/stdc++.h>
-#define FOR(i, b) for (int i=0; i<b; i++)
+#define print_arr(arr, end) do {    \
+	cout << "{";                    \
+	for (int _=0; _<end; _++){      \
+		cout << arr[_];             \
+		if (_!=end-1) cout << ", "; \
+	}								\
+	cout << "}\n"; 					\
+} while(0)
 #define nl '\n'
+
 using namespace std;
 
 
-void setIO(string name = "") { 
-  ios_base::sync_with_stdio(0); cin.tie(0); 
-  if(name.size()){
-    freopen((name+".in").c_str(), "r", stdin); 
-    freopen((name+".out").c_str(), "w", stdout);
-  }
+void setIO(string name) {
+	#ifdef KUSH_LOCAL
+		;
+	#else 
+		ios_base::sync_with_stdio(0); cin.tie(0); 
+		freopen((name+".in").c_str(), "r", stdin); 
+		freopen((name+".out").c_str(), "w", stdout);
+	#endif
 }
 
 
 int main() {
-	setIO();
-
+	setIO("");
+	
 }
+
 
 ]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
