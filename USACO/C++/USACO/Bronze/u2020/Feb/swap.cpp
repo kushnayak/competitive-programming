@@ -1,12 +1,5 @@
 #include <bits/stdc++.h>
-#define print_arr(arr, end) do {    \
-	cout << "{";                    \
-	for (int _=0; _<end; _++){      \
-		cout << arr[_];             \
-		if (_!=end-1) cout << ", "; \
-	}								\
-	cout << "}\n"; 					\
-} while(0)
+#define print_arr(arr, end) do { cout << "{"; for (int _=0; _<end; _++){ cout << arr[_]; if (_!=end-1) cout << ", "; } cout << "}\n"; } while(0)
 #define nl '\n'
 
 using namespace std;

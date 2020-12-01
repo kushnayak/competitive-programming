@@ -6,10 +6,24 @@
 
 using namespace std;
 
+int N,  c[100], s[100];
 int main() {
-	IO("");
-	
-	int mx = 0x7FFFFFFF;
-	cout << mx << nl;
+	IO("outofplace");
 
+	cin >> N;
+	forn(i, N)
+		cin >> c[i];
+
+	copy_n(c, N, s);
+	sort(s, s+N);
+	int ans = 0;
+
+	forn(i, N) {
+		if (c[i] != s[i])
+			ans++;
+	}
+
+	cout << ans-1 << nl;
+
+	
 }

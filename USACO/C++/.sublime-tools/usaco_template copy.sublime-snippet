@@ -2,32 +2,15 @@
 <snippet>
 	<content><![CDATA[
 #include <bits/stdc++.h>
-#define print_arr(arr, end) do {    \
-	cout << "{";                    \
-	for (int _=0; _<end; _++){      \
-		cout << arr[_];             \
-		if (_!=end-1) cout << ", "; \
-	}								\
-	cout << "}\n"; 					\
-} while(0)
-#define nl '\n'
+#define IO(f) cin.tie(0)->sync_with_stdio(0); if (fopen(f ".in", "r")) freopen(f ".in","r",stdin), freopen(f ".out","w",stdout)
+#define print_arr(arr, end) do { cout << "{"; for (int _=0; _<end; _++){ cout << arr[_];if (_!=end-1) cout << ", "; } cout << "}\n"; } while(0)
+#define endl '\n'
 
 using namespace std;
 
 
-void setIO(string name) {
-	#ifdef KUSH_LOCAL
-		;
-	#else 
-		ios_base::sync_with_stdio(0); cin.tie(0); 
-		freopen((name+".in").c_str(), "r", stdin); 
-		freopen((name+".out").c_str(), "w", stdout);
-	#endif
-}
-
-
 int main() {
-	setIO("");
+	IO("");
 	
 }
 
