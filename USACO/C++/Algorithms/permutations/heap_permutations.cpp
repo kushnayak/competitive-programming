@@ -1,3 +1,4 @@
+// O(n!)
 #include <iostream>
 #define print_arr(arr, end) do { cout << "{"; for (int _=0; _<end; _++){ cout << arr[_]; if (_!=end-1) cout << ", "; } cout << "}\n"; } while(0)
 

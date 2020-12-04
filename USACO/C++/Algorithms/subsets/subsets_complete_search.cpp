@@ -1,3 +1,4 @@
+// O(2^n)
 #include <iostream>
 #include <vector>
 using namespace std;

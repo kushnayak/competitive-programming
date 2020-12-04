@@ -6,22 +6,18 @@
 
 using namespace std;
 
-int N;
-string s;
+int N, a, b, d[100000];
 
-int count_right(char color, int split) {
-	int point = 
-}
-int split(int at) {
-	bool red_right
-}
 int main() {
-	IO("beads");
-	cin >> N >> s;
+	IO("planting");
 
+	cin >> N; 
+	forn(i,N-1){
+		cin >> a >> b;
+		d[a-1]++, d[b-1]++;
+	}
 	int mx = 0;
-	for (int i=0; i<N; i++) 
-		mx = max(split(i), mx);
-	cout << mx << nl;
-	
+	forn(i,N)
+		mx = max(d[i], mx);
+	cout << mx+1 << nl;
 }

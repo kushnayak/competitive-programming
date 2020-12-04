@@ -1,15 +1,26 @@
 #include <bits/stdc++.h>
-#define IO(f) cin.tie(0)->sync_with_stdio(0); if (fopen(f ".in", "r")) freopen(f ".in","r",stdin), freopen(f ".out","w",stdout)
-#define nl '\n'
-#define forn(i,n) for(int i=0;i<n;i++)
-#define fore(i, l, r) for(int i = int(l); i <= int(r); ++i)
+#define IO(😵) cin.tie(0)->sync_with_stdio(0); if (fopen(😵 ".in", "r")) freopen(😵 ".in","r",stdin), freopen(😵 ".out","w",stdout)
+#define FOR(😂,😀) for(int 😂=0; 😂<😀; 😂++) 
 
 using namespace std;
 
+int 🥰, 🥺[100], 👹[100];
 int main() {
-	IO("");
-	
-	int mx = 0x7FFFFFFF;
-	cout << mx << nl;
+	IO("triangles");
+	cin >> 🥰;
+	FOR(💩, 🥰)
+		 cin >> 🥺[💩] >> 👹[💩];
+	cout << 🥰 << endl;
+	int 😎 = 0;
+	FOR(💩, 🥰) {
+		FOR(🤓, 🥰) {
+			FOR(🙄, 🥰) {
+				if (💩==🤓||💩==🙄||🤓==🙄) continue;
+				if (🥺[💩]==🥺[🤓]&&👹[💩]==👹[🙄])
+					😎 = max(😎, abs(👹[💩]-👹[🤓])*abs(🥺[💩]-🥺[🙄]));
+			}
+		}
+	}
+	cout << 😎 << endl;
 
 }

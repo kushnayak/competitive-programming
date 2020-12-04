@@ -1,3 +1,4 @@
+// O(n!)
 #include <iostream>
 #include <algorithm>
 
