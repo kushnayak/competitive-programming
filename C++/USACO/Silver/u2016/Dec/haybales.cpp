@@ -6,22 +6,18 @@
 
 using namespace std;
 
-int N;
-string s;
+int N, Q, bales[100000];
 
-int count_right(char color, int split) {
-	int point = 
-}
-int split(int at) {
-	bool red_right
-}
 int main() {
-	IO("beads");
-	cin >> N >> s;
+	IO("haybales");
+	cin >> N >> Q;
+	forn(i,N) 
+		cin >> bales[i];
 
-	int mx = 0;
-	for (int i=0; i<N; i++) 
-		mx = max(split(i), mx);
-	cout << mx << nl;
+	sort(bales, bales+N);
+	for (int i=0; i<Q; i++) {
+		int a, b; cin >> a >> b;
+		cout << upper_bound(bales, bales+N, b) - lower_bound(bales, bales+N, a) << nl;
+	}
 	
 }
