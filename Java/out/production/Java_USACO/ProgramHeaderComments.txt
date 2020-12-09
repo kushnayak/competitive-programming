@@ -1,5 +1,0 @@
-/*
-ID: kushnay1
-LANG: JAVA
-TASK: TaskName
-*/
