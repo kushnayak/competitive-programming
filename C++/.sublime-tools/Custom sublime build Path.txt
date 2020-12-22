@@ -1,5 +1,0 @@
-Custom sublime build
-/Users/kush/Library/Application Support/Sublime Text 3/Packages/User/custom_cpp.sublime-build
-
-template 
-/Users/kush/Library/Application Support/Sublime Text 3/Packages/User/template.sublime-snippet
