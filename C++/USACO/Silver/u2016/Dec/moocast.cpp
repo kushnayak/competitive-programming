@@ -5,6 +5,15 @@
 
 using namespace std;
 
+/*
+Solution:
+We can picture this problem as a directed graph; there is a connection between 
+2 cows a to b, if the dist(a,b) ≤ power of a, meaning cow a can reach b (not necessarily vice versa, hence directed graph)
+After turning this problem into a directed graph, the solution is very simple;
+dfs on each cow and take the maximum visits possible for a cow 
+Time complexity: O(N(N+M))
+
+*/
 int N, x[200], y[200], p[200];
 vector<int> adj[200];
 bool visited[200];

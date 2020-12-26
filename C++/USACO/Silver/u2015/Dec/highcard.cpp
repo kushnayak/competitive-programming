@@ -5,6 +5,17 @@
 #define pb push_back 
 using namespace std;
 
+/*
+Solution:
+We have to use greedy here; bessie should play her smallest card if she has no other
+card that can beat elsie's card, else she should play the smallest card that can
+beat elsie's choice.
+While determining what cards Bessie has, we get her cards in sorted order, meaning 
+we can binary search bessie's cards (upper_bound) to see the smallest card greater
+than elsie's choice
+Time complexity: O(N(logN + N)) = O(NlogN + N^2)
+wait how does this work given N=50000?
+*/
 int N, c[50000*2+5];
 vector<int> bessie, elsie;
 int main() {

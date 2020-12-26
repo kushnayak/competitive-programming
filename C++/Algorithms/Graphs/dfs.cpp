@@ -1,4 +1,10 @@
-// O(n+m) n-nodes m-edges
+/*
+O(n+m) n-nodes m-edges
+O(n) comes from the time it takes to intialize the bool visited array to false for each node
+O(m) is really O(2m) because each edge is considered twice (i.e. visiting child node from 
+parent node and from child node still considering to visit the parent node becuase they are connected)
+However this scalar constant is diregarded in the big o notation so it is just O(M)
+*/
 #include <iostream>
 #include <vector>
 using namespace std;
