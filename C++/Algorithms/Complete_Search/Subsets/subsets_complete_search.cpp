@@ -1,9 +1,14 @@
 // O(2^n)
+
+/*
+Algorithm: To create subsets given N items, for each item 
+you can either choose to include or not include in the subset
+so recurse through each element, one recursion branch for choosing the 
+element and one for not
+*/
 #include <iostream>
 #include <vector>
 using namespace std;
-
-
 
 void printArr(vector<int> &a);
 

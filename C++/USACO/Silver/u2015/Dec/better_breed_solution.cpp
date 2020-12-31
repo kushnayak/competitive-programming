@@ -22,8 +22,8 @@ To query just take prefix[id][b]-prefix[id][a-1]
 Time complexity: O(N+Q)
 */
 // id h:1 g:2 j:3
-int N, Q, p[4][maxN], a, b;
-int query(int id) {return p[id][b]-p[id][a-1];}
+int N, Q, dp[4][maxN], a, b;
+int query(int id) {return dp[id][b]-dp[id][a-1];}
 
 int main() {
 	IO("bcount");
@@ -31,8 +31,8 @@ int main() {
 	for1(i,N) {
 		int cur; cin >> cur;
 		for1(j,3)
-			p[j][i] = p[j][i-1];
-		p[cur][i]++;
+			dp[j][i] = dp[j][i-1];
+		dp[cur][i]++;
 	}
 	forn(i,Q) {
 		cin >> a >> b;

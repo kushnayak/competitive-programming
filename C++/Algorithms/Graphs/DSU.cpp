@@ -1,3 +1,4 @@
+//O(nlogn) for just path compression, O(𝛼(n)) (inverse Ackermann function) with union by size
 #include <bits/stdc++.h>
 #define nl '\n'
 #define forn(i,n) for(int i=0;i<n;i++)

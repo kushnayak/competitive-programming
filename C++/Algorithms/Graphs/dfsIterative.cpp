@@ -1,3 +1,5 @@
+// O(n+m)
+// stack is what is used by recursive calls, can replace that with an actual stack data structure
 #include <iostream>
 #include <vector>
 #include <stack>

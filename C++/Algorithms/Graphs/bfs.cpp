@@ -1,4 +1,4 @@
-// O(n+m) n-nodes m-edges
+// O(n+m) n-vertices m-edges
 #include <iostream>
 #include <vector>
 #include <queue>

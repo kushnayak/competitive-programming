@@ -6,6 +6,6 @@
 	"selector" : "source.cpp",
 	"shell" : true,
 	"working_dir" : "$file_path",
-	"cmd" : ["~/cpp_build.sh $file_path/$file_name $folder/bin/$file_base_name"],
+	"cmd" : ["~/competitive-programming/C++/c++_tools/compile.sh $file_path/$file_name ~/competitive-programming/C++/bin/$file_base_name ~/competitive-programming/C++/input.txt"],
 	
 }
