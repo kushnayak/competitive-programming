@@ -1,0 +1,14 @@
+Binary search:
+lower_bound returns first element ≥ value, if not end()
+upper_bound returns first element > value, if not end()
+
+upper_bound(val) - lower_bound(val) returns the number of val occurences 
+
+to see what index the iterator returned is, do upper_bound/lower_bound - arr/arr.begin()
+
+Reverse binary search:
+when used with a decreasing array and upper_bound/lower_bound(begin,end,greater<int>())
+lower_bound returns first element ≤ value
+upper_bound returns first element < value
+
+to get reverse binary search for containters like multiset, set, you can just do multiset<int,greater<int>>

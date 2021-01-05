@@ -16,10 +16,20 @@ using pii = pair<int,int>;
 using vi = vector<int>;
 using ll = long long;
 
-
+ll N, T, arr[(int)1e5+3], ans;
 
 int main() {
 	cin.tie(0)->sync_with_stdio(0);
-	cout << 10.5%2 << nl;
+
+	cin >> N >> T; forn(i,N) cin >> arr[i];
+
+	ll l=0, r=0, sum=0;
+	for(; r<N; r++){
+		sum += arr[r];
+		while(sum>T && l<=r) sum-=arr[l], l++;
+		ans = max(r-l+1, ans);
+	}
+	cout << ans << nl;
+	
 }
 

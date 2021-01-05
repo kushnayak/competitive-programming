@@ -10,16 +10,20 @@
 #define f first
 #define s second
 #define pb push_back
+#define ub upper_bound
+#define lb lower_bound
 
 using namespace std;
 using pii = pair<int,int>;
 using vi = vector<int>;
 using ll = long long;
 
-
-
+int N;
+unordered_set<int> uset;
 int main() {
 	cin.tie(0)->sync_with_stdio(0);
-	cout << 10.5%2 << nl;
+	cin >> N;
+	forn(i,N) {int a; cin >> a; uset.insert(a);}
+	cout << sz(uset) << nl;
 }
 

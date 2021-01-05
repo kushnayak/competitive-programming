@@ -39,7 +39,7 @@ struct cow{
 bool cmp_x(const cow& a, const cow& b) {if(a.x==b.x)return a.y<b.y; return a.x<b.x;}
 bool cmp_y(const cow& a, const cow& b) {if(a.y==b.y)return a.x<b.x; return a.y<b.y;}
 int N, total;
-vector<cow> east, north, org;
+vector<cow> east, north;
 vi adj[1005];
 void dfs(int s){
 	for(auto u: adj[s]){
@@ -56,7 +56,6 @@ int main() {
 		cow cur = {i,x,y,true};
 		if(c=='E') east.pb(cur);
 		else if(c=='N') north.pb(cur);
-		org.pb(cur);
 	}
 	sort(all(east),cmp_y);
 	sort(all(north),cmp_x);

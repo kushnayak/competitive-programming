@@ -16,10 +16,22 @@ using pii = pair<int,int>;
 using vi = vector<int>;
 using ll = long long;
 
-
+ll N, X, arr[(int)2e5+5], l, r, sum, ans;
 
 int main() {
 	cin.tie(0)->sync_with_stdio(0);
-	cout << 10.5%2 << nl;
+
+	cin >> N >> X;
+	forn(i,N) cin >> arr[i];
+	for(; r<N; r++){
+		sum += arr[r];
+		while(sum>X && l<=r){
+			sum -= arr[l];
+			l++;
+		}
+		if(sum==X) ans++;
+	}
+	cout << ans << nl;
+	
 }
 
