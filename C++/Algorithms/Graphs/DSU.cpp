@@ -8,21 +8,16 @@ const int maxN = 10;
 struct DSU {
 	int parent[maxN], size[maxN], sets;
 	void init(int N) {forn(i,N) parent[i] = i, size[i] = 1; sets = N;}
-	int find(int s) {
-		if(parent[s]==s) return s;
-		else return parent[s] = find(parent[s]);
-	}
+	int find(int s) {return parent[s]==s? s : parent[s] = find(parent[s]); }
 	int sizeOf(int a){return size[find(a)]; } // returns size of set a 
 	bool sameSet(int a, int b) {return find(a)==find(b);}
 	int numSets() {return sets; } //returns the num of disjoint set which starts off asN
 	void unite(int a, int b) {
-		a = find(a); 
-		b = find(b);
+		a = find(a); b = find(b);
 		if(a!=b){
 			sets--;
-			if(size[a]<size[b]) 
-				swap(a,b);
-			parent[b] = a; // attaching a to b where size[b] < size[a]
+			if(size[a]<size[b]) swap(a,b);
+			parent[b] = a; // attaching b -> a where size[b] < size[a]
 			size[a] += size[b];
 		}
 	}

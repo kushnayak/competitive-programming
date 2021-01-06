@@ -20,6 +20,6 @@ using ll = long long;
 
 int main() {
 	cin.tie(0)->sync_with_stdio(0);
-	cout << 10.5%2 << nl;
+	cout << atan(0) << nl;
 }
 

@@ -1,7 +1,5 @@
 // intended solution for gold as well 
 #include <bits/stdc++.h>
-
-#define IO(f) cin.tie(0)->sync_with_stdio(0); if (fopen(f ".in", "r")) freopen(f ".in","r",stdin), freopen(f ".out","w",stdout)
 #define nl '\n'
 #define forn(i,n) for(int i=0;i<n;i++)
 #define f first
@@ -11,7 +9,7 @@
 using namespace std;
 using pii = pair<int,int>;
 using vi = vector<int>;
-const int maxN = 3001;
+const int maxN = 3001; //change maxN if submitting to gold
 
 struct DSU {
 	int parent[maxN];
@@ -28,9 +26,8 @@ struct DSU {
 		a = find(a); b = find(b);
 		if(a!=b){
 			sets--;
-			if(size[a]<size[b]) 
-				swap(a,b);
-			// attaching a to b where size[b] < size[a]
+			if(size[a]<size[b]) swap(a,b);
+			// attaching b -> a where size[b] < size[a]
 			parent[b] = a;
 			size[a] += b;
 		}
@@ -45,7 +42,9 @@ vi ok;
 
 
 int main() {
-	IO("closing");
+	ios_base::sync_with_stdio(false); cin.tie(0);
+	freopen("closing.in","r",stdin);
+	freopen("closing.out","w",stdout);
 	cin >> N >> M;
 	forn(i,M){
 		int a, b; cin >> a >> b;
