@@ -20,7 +20,6 @@ fi
 
 #alias and source the run command to make the output in the new terminal window less cluttered 
 #when the command is called and echoed 
-
 alias_run="run_$(basename $1)"
 echo "alias $alias_run=\"$command\"" >> ~/competitive-programming/C++/tools/command.sh
 source ~/competitive-programming/C++/tools/command.sh
