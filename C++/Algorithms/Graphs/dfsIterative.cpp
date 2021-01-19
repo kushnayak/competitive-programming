@@ -17,6 +17,8 @@ void dfs(int x) {
 	while(!stack.empty()) {
 		int s = stack.top(); stack.pop();
 
+		// we check not visited twice because 2 nodes can appear in the stack at the same time
+		// if there are cycles in the graph
 		if (!visited[s]) {
 			visited[s] = true;
 			//process 

@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#define IO(f) cin.tie(0)->sync_with_stdio(0); if (fopen(f ".in", "r")) freopen(f ".in","r",stdin), freopen(f ".out","w",stdout)
 
 #define forn(i,n) for(int i=0;i<n;i++)
 #define for1(i,n) for(int i=1;i<=n;i++)
@@ -14,10 +13,10 @@ using namespace std;
 using pii = pair<int,int>;
 using ll = long long;
 
-int a, arr[10]; 
+
 
 int main() {
-	IO("");
-	cin >> a; forn(i,a) cin >> arr[i], cout << arr[i] << nl;
+	cin.tie(0)->sync_with_stdio(0);
+	
 }
 
