@@ -44,7 +44,7 @@ void dfs(int s, int minw){
 }
 // check if a min weight suffices
 bool check(int minw){
-	fill(comp,comp+N,-1); memset(visited,0,N);
+	memset(comp,-1,N*sizeof(comp[0])); memset(visited,0,N);
 	forn(i,N) if(!visited[i]){
 		cmp++;
 		dfs(i,minw);

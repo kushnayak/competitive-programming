@@ -1,22 +1,9 @@
 #include <bits/stdc++.h>
 
 #define forn(i,n) for(int i=0;i<n;i++)
-#define for1(i,n) for(int i=1;i<=n;i++)
-
-#define sz(v) int((v).size())
-#define all(v) (v).begin(),(v).end()
-
-#define nl '\n'
-#define f first
-#define s second
 #define pb push_back
-#define ub upper_bound
-#define lb lower_bound
-
+#define nl '\n'
 using namespace std;
-using pii = pair<int,int>;
-using vi = vector<int>;
-using ll = long long;
 
 /*
 Solution:
@@ -29,18 +16,22 @@ moving. We also know cow a will stop cow b if it is closer to their intersection
 cows stop each other so let's represent cows stopping each other as a graph, if cow a stops b, then we 
 can draw a directed edge from cow a to cow b. Now if cow b previously stopped cow c, then there would
 already be a directed edge from cow b to cow c, and if we dfsed on cow a, it could reach b and consequently
-reach b meaning we have achieved the transitive relationship the problem stated.
+reach c meaning we have achieved the transitive relationship the problem stated.
 Time complexity: O(n^2 + nlogn)
 */
+
 struct cow{
 	int i, x, y;
-	bool moving;
+	bool moving=true;
 };
+
 bool cmp_x(const cow& a, const cow& b) {if(a.x==b.x)return a.y<b.y; return a.x<b.x;}
 bool cmp_y(const cow& a, const cow& b) {if(a.y==b.y)return a.x<b.x; return a.y<b.y;}
+
 int N, total;
 vector<cow> east, north;
-vi adj[1005];
+vector<int> adj[1005];
+
 void dfs(int s){
 	for(auto u: adj[s]){
 		total++;
@@ -51,14 +42,14 @@ int main() {
 	cin.tie(0)->sync_with_stdio(0);
 	cin >> N;
 	forn(i,N){
-		char c; int x, y;
-		cin >> c >> x >> y;
-		cow cur = {i,x,y,true};
+		cow cur; char c;
+		cur.i=i;
+		cin >> c >> cur.x >> cur.y;
 		if(c=='E') east.pb(cur);
 		else if(c=='N') north.pb(cur);
 	}
-	sort(all(east),cmp_y);
-	sort(all(north),cmp_x);
+	sort(east.begin(),east.end(),cmp_y);
+	sort(north.begin(),north.end(),cmp_x);
 
 	for(cow& a: north){
 		for(cow& b: east){
@@ -76,6 +67,7 @@ int main() {
 			}
 		}
 	}
+	
 	forn(i,N){
 		total = 0;
 		dfs(i);
