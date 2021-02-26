@@ -1,6 +1,5 @@
-brew install gcc@9 then bits/stdc++.h should be in the dir below (or just use -H flag to
-when compiling g++-9 with to see where include paths are):
-/usr/local/Cellar/gcc@9/9.3.0_1/include/c++/9.3.0/x86_64-apple-darwin20/bits/
+brew install gcc then bits/stdc++.h should be in the dir below (or just use -H flag to
+when compiling g++-10 with to see where include paths are)
 
 Compile above bits/stdc++.h using same flags as cpp flags then when -H flag is used again
 bits/stdc++.h.gch should be shown meaning precompile leads to faster compilation

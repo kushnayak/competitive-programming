@@ -1,10 +1,11 @@
+
 #!/bin/bash
 
 src=$1
 executable=$2 
 dir=$(dirname "$0") # $0 returns the location of this script, dirname just chops the file off to create directory
 
-g++-9 -std=c++11 -Wall -Wextra -O2 -Wl,-stack_size -Wl,0x10000000 -D KUSH_LOCAL $src -o $executable
+g++-10 -std=c++11 -Wall -Wextra -O2 -Wl,-stack_size -Wl,0x10000000 -D KUSH_LOCAL $src -o $executable
 # prevent stack overflow: use "-Wl,-stack_size -Wl,0x10000000" to incraease stack size from 8 mb to 256 mb
 # remove -Werror if you do not want "warnings" from -Wall,-Wextra, etc. to be treated
 # as errors which will result in return value of code with warnings with not 0

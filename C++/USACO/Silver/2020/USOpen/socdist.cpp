@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#define IO(f) cin.tie(0)->sync_with_stdio(0); if (fopen(f ".in", "r")) freopen(f ".in","r",stdin), freopen(f ".out","w",stdout)
 
 #define forn(i,n) for(int i=0;i<n;i++)
 #define for1(i,n) for(int i=1;i<=n;i++)
@@ -8,16 +7,16 @@
 #define all(v) (v).begin(),(v).end()
 
 #define nl '\n'
-#define f first
-#define s second
 #define pb push_back
-#define ub upper_bound
-#define lb lower_bound
 
 using namespace std;
-using pii = pair<int,int>;
-using vi = vector<int>;
 using ll = long long;
+using pii = pair<ll, ll>;
+#define s first
+#define e second
+
+ll n, m; 
+pii p[100005];
 
 /*
 Solution:
@@ -28,35 +27,44 @@ and we can do this first by sorting the intervals, then greedily by putting a co
 last pos + D in a interval and if that does not work move on to next interval.
 Time complexity: O((N+M)log10^18)
 */
-const int maxN = 1e5 + 5;
-int N, M;
-pair<ll,ll> interval[maxN];
-
-bool possible(ll D) {
-	ll used = 0;
-	ll last = -1e18;
-	for(int i=0; i<M; i++) {
-		pair<ll,ll>& cur = interval[i];
-		while(max(last+D,cur.f)<=cur.s) {
-			used++;
-			last = max(last+D,cur.f);
-			if(used>=N) break;
-		}
-	}
-	return used>=N;
+bool cmp(const pii &a, const pii &b){
+	return a.s < b.s;
 }
 
-ll search() {
-	ll pos = 1, mx = 1e18+1;
-	for(ll a=mx; a>=1; a/=2)
-		while(possible(pos+a)) pos+=a;
-	return pos;
+// check if we can place cows at least d away
+bool check(ll d){
+	ll used=0; 
+	int i=0; 
+	ll last = p[0].s-d; 
+	while(i<m){
+		if(p[i].s-last>d){ 
+			last = p[i].s; 
+			used++; 
+		}
+		while(p[i].s<=last+d && last+d<=p[i].e){
+			last += d; 
+			used++;
+		}
+		i++;
+	}
+	return used>=n; 
+}
+
+ll search(){
+	ll maxn=1e18+1, pos=0; 
+	for(ll a=maxn; a>=1; a/=2)
+		while(check(pos+a))
+			pos += a; 
+	return pos; 
 }
 int main() {
+	#define IO(f) cin.tie(0)->sync_with_stdio(0); if (fopen(f ".in", "r")) freopen(f ".in","r",stdin), freopen(f ".out","w",stdout)
 	IO("socdist");
-	cin >> N >> M;
-	forn(i,M) cin >> interval[i].f >> interval[i].s;
-	sort(interval,interval+M);
+	cin >> n >> m; 
+	forn(i,m) cin >> p[i].s >> p[i].e;
+	sort(p,p+m,cmp);
+
 	cout << search() << nl;
 }
+
 

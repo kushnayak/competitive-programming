@@ -8,31 +8,32 @@
 
 #define nl '\n'
 #define pb push_back
+
 using namespace std;
 using pii = pair<int,int>;
-using vi = vector<int>;
 using ll = long long;
 
-vector<vector<int>> v;
+int n, arr[200005];
+vector<vector<int>> sorted;
 
 int main() {
 	cin.tie(0)->sync_with_stdio(0);
-	int N; cin >> N;
-	while(N--){
-		int a; cin >> a;
-		int l=0, r=sz(v);
-		while(l!=r){
-			int mid = (l+r)/2;
-			if(a>v[mid].back()) r = mid;
-			else l = mid+1;
+	cin >> n; 
+	forn(i,n) cin >> arr[i];
+	forn(i,n){
+		int l=0, r=sz(sorted);
+		while(l<r){
+			int mid=(l+r)/2;
+			if(arr[i]<sorted[mid].back()){
+				l=mid+1; 
+			} else {
+				r=mid;
+			}
 		}
-		if(l==sz(v)) v.pb({a});
-		else v[l].pb(a);
+		l==sz(sorted) ? sorted.pb({arr[i]}) : sorted[l].pb(arr[i]);
 	}
-	for(auto& u: v)
-		forn(i,sz(u))
-			cout << u[i] << " \n"[i==sz(u)-1];
-	
-
+	for(auto u: sorted)
+		for(int i: u)
+			cout << i << " \n"[i==u[sz(u)-1]];
 }
 
