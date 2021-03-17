@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 src=$1
@@ -22,7 +21,7 @@ else
 fi
 
 # -rsn1 to press any key to continue https://www.tweaking4all.com/software/linux-software/bash-press-any-key/
-command="$exec;echo''; read -p'Press enter to continue . . .';exit"
+command="$exec;echo''; read -p'Press enter to continue . . .'; open -a Sublime\ Text; exit"
 
 # alias and source the run command to make the output in the new terminal window less cluttered 
 # when the command is called and echoed 

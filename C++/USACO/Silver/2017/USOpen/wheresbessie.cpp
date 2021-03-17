@@ -14,63 +14,80 @@ using namespace std;
 using pii = pair<int,int>;
 using ll = long long;
 
-const int maxN=21, maxCol=26;
-const int dy[]={1,-1,0,0}, dx[]={0,0,-1,1};
-int N, ans;
-int grid[maxN][maxN];
-int cmps[maxCol];
-bool visited[maxN][maxN], ff_visit[maxN][maxN];
-int ystart, xstart, yend, xend;
+const int dy[]={1,0,-1,0}, dx[]={0,1,0,-1};
+struct pcl {
+	int r1, c1, r2, c2; 
+}cur; 
 
-/* too lazy to finish implementation
-*/
-void ff(int r, int c){
-	if(r<ystart || r>yend || c<xstart || c>xend){ return; }
-	if(ff_visit[r][c]){ return; }
-	ff_visit[r][c]=true;
-	forn(i,4) ff(r+dy[i],c+dx[i]);
-}
-void check(int y, int x, int ysz, int xsz){
-	forn(i,N) memset(ff_visit[i],0,N);
-	memset(cmps,0,maxCol);
-	ystart=y; xstart=x; yend=y+ysz-1; xend=x+xsz-1;
-	for(int i=ystart; i<=yend; i++)
-		for(int j=xstart; j<=xend; j++)
-			if(!ff_visit[i][j]){
-				cmps[grid[i][j]]++;
-				ff(i,j);
-			}
-	int f=0, s=0;
-	forn(i,maxCol){
-		if(cmps[i] && !f){ f=cmps[i];}
-		else if (cmps[i] && !s){ s=cmps[i]; }
-		else if (cmps[i] && f && s){ return; }
-	}
-	cout << "for y:" << y << " x:" << x << " ysz:" << ysz
-	<< " xsz:" << xsz << " f:" << f << " s:" << s << nl;  
-	if(!((f==1&&s>1)||(f==1&&s>1))){ return; }
+int N; 
+char grid[21][21]; 
+bool visited[21][21]; 
+int comp[26]; 
+vector<pcl> found; 
 
-	ans++;
-	for(int i=ystart; i<=yend; i++)
-		for(int j=xstart; j<=xend; j++)
-			visited[i][j]=true;
-	
+void ff(int i, int j, char color){
+	if(i<cur.r1 || i>cur.r2 || j<cur.c1 || j>cur.c2) return; 
+	if(visited[i][j] || grid[i][j]!=color) return; 
+	visited[i][j]=true; 
+	for(int d=0; d<4; ++d) ff(i+dy[d], j+dx[d], color); 
 }
-int main() {
-	IO("");
-	cin >> N;
-	forn(i,N) forn(j,N) {
-		char c; cin >> c;
-		grid[i][j] = (int)c;
-	}
-	int ysz=N, xsz=N;
-	for(int i=0; i<=N-ysz; i++){
-		for(int j=0; j<=N-xsz; j++){
-			if(!visited[i][j] || !visited[i+ysz][j+xsz]){
-				check(i,j,ysz,xsz);
+bool is_pcl(pcl p){
+	memset(comp, 0, sizeof(comp[0])*26); 
+	forn(r,N) memset(visited[r], 0, N); 
+	cur = p; 
+	for(int i=cur.r1; i<=cur.r2; ++i)
+		for(int j=cur.c1; j<=cur.c2; ++j)
+			if(!visited[i][j]){
+				++comp[grid[i][j]-'A']; 
+				ff(i, j, grid[i][j]); 
 			}
+	int total=0; 
+	bool one=false, multiple=false; 
+	forn(i,26){
+		if(comp[i]){
+			total++; 
+			if(comp[i]==1) one=true; 
+			if(comp[i]>1) multiple=true; 
 		}
 	}
-	cout << ans << nl;
+	return one && multiple && total==2; 
+}
+
+int ans;
+
+bool not_sub(int at){
+	for(int i=0; i<sz(found); ++i){
+		if(i==at) continue;
+
+		if(
+		found[i].r1 <= found[at].r1
+		&& found[at].r2 <= found[i].r2
+		&& found[i].c1 <= found[at].c1
+		&& found[at].c2 <= found[i].c2
+		)
+			return false; 
+	}
+	return true; 
+}
+int main() {
+	IO("where");
+	cin >> N; 
+	forn(i,N) forn(j,N) cin >> grid[i][j]; 
+	for(int i1=0; i1<N; ++i1)
+		for(int j1=0; j1<N; ++j1)
+			for(int i2=i1; i2<N; ++i2)
+				for(int j2=j1; j2<N; ++j2){
+					pcl p = {i1,j1,i2,j2}; 
+					if(is_pcl(p)){
+						found.pb(p); 
+						// cout << "pcl found:" << nl; 
+						// cout << "from " << i1 << " " << j1 << nl; 
+						// cout << "to " << i2 << " " << j2 << nl << nl; 
+					}
+				}
+	for(int i=0; i<sz(found); ++i)
+		if(not_sub(i))
+			++ans; 
+	cout << ans << nl; 
 }
 

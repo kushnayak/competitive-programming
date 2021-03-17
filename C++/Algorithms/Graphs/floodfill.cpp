@@ -18,17 +18,16 @@ void floodfill(int r, int c, int color){
 	visited[r][c] = true; // mark current square as visited
 	cursize++; // increment the size for each square we visit
 	// recursively call floodfill for neighboring squares
-	for(int y: dy)
-		for(int x: dx)
-			ff(r+y,c+x,color);
+	forn(i,4)
+		ff(r+dy[i],c+dx[i],color);
 }
 
 int main() {
 
 	forn(i,N)
-		forn(j,N)
+		forn(j,N) 
 			if(!visited[i][j]){
-				cursize=0;
+				cursize=0; // size of each connected component
 				ff(i,j,grid[i][j]);
 			}
 }

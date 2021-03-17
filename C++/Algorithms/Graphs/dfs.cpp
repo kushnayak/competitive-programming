@@ -19,16 +19,16 @@ using namespace std;
 	5 7
 */
 int N, M;
-bool visited[7];
+bool vis[7];
 vector<int> adj[7];
 
 void dfs(int s) {
-	if (visited[s]) return; // reached max depth
 	visited[s] = true;
 	//process
 	cout << "visited " << s << '\n';
 	for (auto u: adj[s])
-		dfs(u);
+		if(!vis[u])
+			dfs(u);
 }
 int main() {
 	cin >> N >> M;
